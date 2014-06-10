@@ -255,14 +255,18 @@ module.exports = function (grunt) {
       }
     },
     buildcontrol: {
-      dist: {
         options: {
-          remote: '../',
-          branch: 'gh-pages',
-          commit: true,
-          push: true
+            dir: 'dist',
+            commit: true,
+            push: true,
+            message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        },
+        pages: {
+            options: {
+                remote: 'git@github.com:dmao/dmao.github.io.git',
+                branch: 'gh-pages'
+            }
         }
-      }
     },
     jshint: {
       options: {
