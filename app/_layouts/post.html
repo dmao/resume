@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h1 class="title--line epsilon">{{ page.categories }}</h1>
+<div class="mod">
+    <div class="mod--content">
+        <article class="post">
+            <header class="post--header">
+                <h2 class="hN">{{ page.title }}</h2>
+                <time class="date push-half--bottom">{{ page.date | date: "%d-%m-%Y" }}</time>
+            </header>
+            <div class="post--content">
+                {{ content }}
+            </div>
+        </article>
+    </div>
+</div>
+
+

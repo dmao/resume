@@ -1,0 +1,14 @@
+{% include header.html %}
+
+<div class="container push--top container--main" id="js-main-container">
+    <div class="grid">
+        <div class="grid__item three-quarters lap-two-thirds palm-one-whole">
+            {{ content }}
+        </div>
+        <div class="grid__item one-quarter lap-one-third palm-one-whole">
+            {% include sidebar.html %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,33 @@
+<h2 class="title--line epsilon">News</h2>
+<div class="mod">
+    <div class="mod--content__narrow">
+        <ul class="block-list">
+            {% for post in site.categories.news limit:5 %}
+            <li>
+                <a href="{{ post.url }}">
+                    <h3 class="flush--bottom delta narrow">{{ post.title }}</h3>
+                    <time class="date push-half--bottom">{{ post.date | date: "%d-%m-%Y" }}</time>
+                    <p>{{ post.resume }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/news/" class="btn btn--primary">Toutes les news</a>
+    </div>
+</div>
+
+<h2 class="title--line epsilon">Clients</h2>
+<div class="mod">
+    <div class="mod--content">
+        <ul id="js-slide-client" class="rslides">
+            {% for post in site.tags.sidebar %}
+            <li>
+                <a href="{{ post.link }}">
+                    <img src="/assets/img/illu/clients/{{ post.img }}" alt="{{ post.title }}"/>
+                    <p class="caption">{{ post.title }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

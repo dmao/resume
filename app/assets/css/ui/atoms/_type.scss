@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'latoregular';
+	src: url('/assets/css/fonts/lato-reg-webfont.eot');
+	src: url('/assets/css/fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+	url('/assets/css/fonts/lato-reg-webfont.woff') format('woff'),
+	url('/assets/css/fonts/lato-reg-webfont.ttf') format('truetype'),
+	url('/assets/css/fonts/lato-reg-webfont.svg#latoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('/assets/css/fonts/opensans-light-webfont.eot');
+  src: url('/assets/css/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/css/fonts/opensans-light-webfont.woff') format('woff'),
+  url('/assets/css/fonts/opensans-light-webfont.ttf') format('truetype'),
+  url('/assets/css/fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('/assets/css/fonts/opensans-regular-webfont.eot');
+	src: url('/assets/css/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('/assets/css/fonts/opensans-regular-webfont.woff') format('woff'),
+	url('/assets/css/fonts/opensans-regular-webfont.ttf') format('truetype'),
+	url('/assets/css/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: bold;
+	font-style: normal;
+
+}
+/*
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/assets/css/fonts/opensans-bold-webfont.eot');
+    src: url('/assets/css/fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/css/fonts/opensans-bold-webfont.woff') format('woff'),
+         url('/assets/css/fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('/assets/css/fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+*/
+@font-face {
+  font-family: 'quicksandregular';
+  src: url('/assets/css/fonts/quicksand-regular-webfont.eot');
+  src: url('/assets/css/fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/css/fonts/quicksand-regular-webfont.woff') format('woff'),
+  url('/assets/css/fonts/quicksand-regular-webfont.ttf') format('truetype'),
+  url('/assets/css/fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:  $header-font-family;
+	color:  $header-font-color;
+	font-weight: $header-font-weight;
+	font-style: $header-font-style;
+	//text-transform: $header-font-transform;
+	//text-shadow: 1px 2px 1px gray;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+// prefers speed for mobil, use optimizeLegibility for portable & up
+@include media-query(lap-and-up) {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		text-rendering: optimizeLegibility;
+	}
+}
+.lead {
+  font-weight: bold;
+}
+.narrow {
+	line-height: 1;
+}
+// for links
+.text-color {
+	color: $body-font-color;
+}
+.heading-color {
+	color: $header-font-color;
+}
+.nowrap {
+  white-space: nowrap;
+}
+small {
+	font-size:$small;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-bottom: 1px solid $hr-border-color;
+}
+
+
+a {
+	color:$link-color;
+	text-decoration: $link-text-decoration;
+	-webkit-transition:$link-transition;
+	transition:$link-transition;
+	&:hover, &:active {
+		color: $link-color
+	}
+
+}
+
+
+
+figure {
+	margin: $base-spacing-unit;
+	img {
+		border: 1px solid $base-ui-color;
+		padding: $half-spacing-unit;
+		background: $white;
+	}
+}
+
+figcaption {
+	text-align: center;
+	color: $grey-dark;
+	margin-top: $half-spacing-unit;
+	font-size: 80%;
+}
+
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 0;
+}
+
+
+
+address {
+	font-style:normal;
+}
+
+
+.date {
+  @include font-size(12px);
+  display: inline-block;
+  font-family: georgia, serif;
+}
+
+::selection {
+	background: $primary-color; /* Safari */
+	color:$white;
+}
+::-moz-selection {
+	background: $primary-color; /* Firefox */
+	color:$white;
+}
+
+
+
+
+

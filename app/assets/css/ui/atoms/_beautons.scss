@@ -1,0 +1,59 @@
+.btn{
+	background-color: $button-background-color;
+	color: $button-font-color;
+	&:hover,
+	&:focus {
+		text-decoration:none;
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		color: $button-font-color;
+	}
+	&:active,
+	&:focus{
+		outline:none;
+	}
+}
+
+/**
+ * Positive actions; e.g. sign in, purchase, submit, etc.
+ */
+.btn--positive{
+	background-color:#16a085;
+	color:#fff;
+}
+
+/**
+ * Negative actions; e.g. close account, delete photo, remove friend, etc.
+ */
+.btn--negative{
+	background-color:#c0392b;
+	color:#fff;
+}
+
+.btn--inactive,
+.btn--inactive:hover,
+.btn--inactive:active,
+.btn--inactive:focus{
+	background-color:#ddd;
+	color:#777;
+	cursor:text;
+	box-shadow: none;
+}
+
+.btn--primary {
+	background-color: $button-primary-background-color;
+	
+}
+.btn--secondary{
+	background-color: complement($button-primary-background-color);
+}
+.btn--tertiary{}
+
+.btn--positive,
+.btn--negative,
+.btn--primary, 
+.btn--secondary {
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+}

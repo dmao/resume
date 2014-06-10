@@ -1,0 +1,61 @@
+body {
+	margin: 0 auto;
+	color: $body-font-color;
+	font-weight:$body-font-weight;
+	font-style:$body-font-style;
+    background: $body-bg;
+}
+
+.container {
+	max-width: $container-max-width;
+	margin: 0 auto;
+	padding: 0 $base-spacing-unit;
+}
+.container--main {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  left: 0;
+  padding-bottom: $base-spacing-unit;
+}
+.push {
+  left: 190px;
+  position: relative;
+}
+.container__narrow {
+	max-width: $container__narrow-max-width;
+}
+.page {
+	background : $page-background-color;
+}
+
+
+.bare-list {
+  margin-left: 0;
+  list-style: none;
+}
+.rounded {
+  border-radius: $brand-round;
+}
+
+.img-block {
+	display: block;
+}
+
+// different image format for lazy load
+.img-square {
+	position: relative;
+    padding-bottom: 75%; /* our ratio for this image, you can adjust this accordingly */
+    height: 0;
+    overflow: hidden;
+    img {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    }
+}
+
+

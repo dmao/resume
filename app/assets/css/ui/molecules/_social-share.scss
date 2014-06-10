@@ -1,0 +1,29 @@
+.icon-social {
+	@include font-size(26px);
+	color: $white;
+}
+
+
+.icon-facebook-sign {
+	&:hover {
+		color: #3b5998;
+	}
+}
+
+.icon-twitter-sign {
+	&:hover {
+		color: #9AE4E8;
+	}
+}
+
+.icon-youtube-sign {
+	&:hover {
+		color: #b31217;
+	}
+}
+
+.icon-flickr {
+	&:hover {
+		color: #ff0084
+	}
+}

@@ -1,0 +1,27 @@
+.search {
+	@extend .cf;
+}
+.search__wrapper {
+	border: 1px solid $base-ui-color;
+	border-radius: 12px;
+	float: left;
+	padding: 0 0 0 $half-spacing-unit;
+	margin-bottom: 0;
+}
+.search__field,
+.search__submit {
+	border: none;
+	background: none;
+}
+.search__field:focus {
+	border: none;
+	cursor: text;
+	outline: none;
+}
+.search__submit {
+	top: 2px;
+	position: relative;
+	&:hover {
+	color: $primary-color;
+	}
+}

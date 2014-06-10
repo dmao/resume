@@ -1,0 +1,12 @@
+.footer {
+	background: #101010;
+	padding: $half-spacing-unit 0;
+    color: #a5a5a5;
+    p {
+      @include font-size(14px);
+    }
+}
+
+.light {
+  color: $white;
+}
